@@ -83,6 +83,86 @@ header div.top-bar {
     align-items: flex-end;
 }
 
+header div.top-bar nav a:nth-of-type(1) {
+    animation: shadow1 2s 1;
+}
+
+header div.top-bar nav a:nth-of-type(2) {
+    animation: shadow2 3s 1;
+}
+
+header div.top-bar nav a:nth-of-type(3) {
+    animation: shadow3 4s 1;
+}
+
+header div.top-bar nav a:nth-of-type(4) {
+    animation: shadow4 5s 1;
+}
+
+header div.top-bar nav a:nth-of-type(5) {
+    animation: shadow5 6s 1;
+}
+
+@keyframes shadow1 {
+    65% {
+        text-shadow: none;
+    }
+    75% {
+        text-shadow: 0 0 .5rem;
+    }
+    90% {
+        text-shadow: none;
+    }
+}
+
+@keyframes shadow2 {
+    70% {
+        text-shadow: none;
+    }
+    80% {
+        text-shadow: 0 0 .5rem;
+    }
+    to {
+        text-shadow: none;
+    }
+}
+
+@keyframes shadow3 {
+    80% {
+        text-shadow: none;
+    }
+    90% {
+        text-shadow: 0 0 .5rem;
+    }
+    to {
+        text-shadow: none;
+    }
+}
+
+@keyframes shadow4 {
+    85% {
+        text-shadow: none;
+    }
+    95% {
+        text-shadow: 0 0 .5rem;
+    }
+    to {
+        text-shadow: none;
+    }
+}
+
+@keyframes shadow5 {
+    87% {
+        text-shadow: none;
+    }
+    97% {
+        text-shadow: 0 0 .5rem;
+    }
+    to {
+        text-shadow: none;
+    }
+}
+
 header div.top-bar img {
     width: 20%
 }
