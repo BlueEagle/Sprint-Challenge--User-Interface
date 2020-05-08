@@ -292,3 +292,76 @@ footer nav a {
         font-size: 2rem;
     }
 }
+
+@media (max-width: 500px) {
+    header div.top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div.top-bar img {
+        width: 35%;
+        margin: 0 0 7% 0;
+    }
+
+    header div.top-bar nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div.top-bar nav a {
+        margin: 3% 0;
+    }
+
+    header .banner img {
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    section.top-content h2 {
+        font-size: 2.6rem;
+    }
+
+    section.top-content p {
+        font-size: 2rem;
+    }
+
+    section.top-content .text-container {
+        margin: 2%;
+    }
+
+    section.middle-content h2 {
+        font-size: 3rem;
+    }
+
+    section.middle-content div.boxes div.box {
+        font-size: 2.5rem;
+    }
+
+    section.bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.bottom-content div.text-container {
+        width: 95%;
+    }
+
+    section.bottom-content h2 {
+        font-size: 3rem;
+    }
+
+    section.bottom-content p {
+        font-size: 2rem;
+    }
+
+    footer nav {
+        flex-direction: column;
+        padding 0;
+    }
+
+    footer nav a {
+        margin: 2%;
+        font-size: 3rem;
+    }
+}
