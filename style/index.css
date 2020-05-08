@@ -150,43 +150,43 @@ header div.banner img {
 }
 
 .middle-content .boxes .box:nth-of-type(1) {
-    background: #008080;
+    background: teal;
 }
 
 .middle-content .boxes .box:nth-of-type(2) {
-    background: #FFD700;
+    background: gold;
 }
 
 .middle-content .boxes .box:nth-of-type(3) {
-    background: #5F9EA0;
+    background: cadetblue;
 }
 
 .middle-content .boxes .box:nth-of-type(4) {
-    background: #FF7F50;
+    background: coral;
 }
 
 .middle-content .boxes .box:nth-of-type(5) {
-    background: #DC143C;
+    background: crimson;
 }
 
 .middle-content .boxes .box:nth-of-type(6) {
-    background: #228B22;
+    background: forestgreen;
 }
 
 .middle-content .boxes .box:nth-of-type(7) {
-    background: #9932CC;
+    background: darkorchid;
 }
 
 .middle-content .boxes .box:nth-of-type(8) {
-    background: #FF69B4;
+    background: hotpink;
 }
 
 .middle-content .boxes .box:nth-of-type(9) {
-    background: #4B0082;
+    background: indigo;
 }
 
 .middle-content .boxes .box:nth-of-type(10) {
-    background: #1E90FF;
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -357,7 +357,7 @@ footer nav a {
 
     footer nav {
         flex-direction: column;
-        padding 0;
+        padding
     }
 
     footer nav a {
