@@ -19,8 +19,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
+    font: inherit;
+    font-size: 62.5%;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -57,37 +57,153 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
     font-family: 'Rubik', sans-serif;
 }
 
 p {
     line-height: 1.4;
+    font-size: 1.6rem;
 }
 
 .container {
-    width: 800px;
+    width: 65%;
     margin: 0 auto;
+}
+
+header {
+    margin: 2.5% 0 2.5% 0;
+}
+
+header div.top-bar {
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header div.top-bar nav a:nth-of-type(1) {
+    animation: shadow1 2s 1;
+}
+
+header div.top-bar nav a:nth-of-type(2) {
+    animation: shadow2 3s 1;
+}
+
+header div.top-bar nav a:nth-of-type(3) {
+    animation: shadow3 4s 1;
+}
+
+header div.top-bar nav a:nth-of-type(4) {
+    animation: shadow4 5s 1;
+}
+
+header div.top-bar nav a:nth-of-type(5) {
+    animation: shadow5 6s 1;
+}
+
+@keyframes shadow1 {
+    65% {
+        text-shadow: none;
+    }
+    75% {
+        text-shadow: 0 0 .5rem;
+    }
+    90% {
+        text-shadow: none;
+    }
+}
+
+@keyframes shadow2 {
+    70% {
+        text-shadow: none;
+    }
+    80% {
+        text-shadow: 0 0 .5rem;
+    }
+    to {
+        text-shadow: none;
+    }
+}
+
+@keyframes shadow3 {
+    80% {
+        text-shadow: none;
+    }
+    90% {
+        text-shadow: 0 0 .5rem;
+    }
+    to {
+        text-shadow: none;
+    }
+}
+
+@keyframes shadow4 {
+    85% {
+        text-shadow: none;
+    }
+    95% {
+        text-shadow: 0 0 .5rem;
+    }
+    to {
+        text-shadow: none;
+    }
+}
+
+@keyframes shadow5 {
+    87% {
+        text-shadow: none;
+    }
+    97% {
+        text-shadow: 0 0 .5rem;
+    }
+    to {
+        text-shadow: none;
+    }
+}
+
+header div.top-bar img {
+    width: 20%
+}
+
+header a {
+    color: #030811;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+header nav {
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* header div.banner {
+    margin-top: 5%;
+} */
+
+header div.banner img {
+    width: 100%;
 }
 
 .top-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2%;
+    border-bottom: .1rem dashed black;
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 2.0rem;  
 }
 
 .middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+    margin-bottom: 2%;
+    border-bottom: .1rem dashed black;
 }
 
 .middle-content h2 {
@@ -102,7 +218,7 @@ p {
 }
 
 .middle-content .boxes .box {
-    width: 12.5%;
+    width: 100px;
     height: 100px;
     background: black;
     margin: 20px 2.5%;
@@ -110,6 +226,47 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 1.6rem;
+}
+
+.middle-content .boxes .box:nth-of-type(1) {
+    background: teal;
+}
+
+.middle-content .boxes .box:nth-of-type(2) {
+    background: gold;
+}
+
+.middle-content .boxes .box:nth-of-type(3) {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box:nth-of-type(4) {
+    background: coral;
+}
+
+.middle-content .boxes .box:nth-of-type(5) {
+    background: crimson;
+}
+
+.middle-content .boxes .box:nth-of-type(6) {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box:nth-of-type(7) {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box:nth-of-type(8) {
+    background: hotpink;
+}
+
+.middle-content .boxes .box:nth-of-type(9) {
+    background: indigo;
+}
+
+.middle-content .boxes .box:nth-of-type(10) {
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -137,10 +294,154 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+    font-size: 1.6rem;
+}
+
+@media (max-width: 800px) {
+
+    header a {
+        font-size: 2.5rem;
+    }
+
+    header nav {
+        justify-content: space-evenly;
+    }
+
+    section.top-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 2% 2.5%;
+    }
+
+    section.top-content div.text-container {
+        width: 100%;
+    }
+
+    section.middle-content {
+        padding: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.middle-content h2 {
+        align-self: flex-start;
+        margin: 3%;
+    }
+
+    section.middle-content .boxes {
+        width: 60%;
+    }
+
+    section.middle-content .boxes .box {
+        width: 200px;
+        height: 200px;
+    }
+
+    section.bottom-content {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+    }
+
+    section.bottom-content div.text-container {
+        width: 50%;
+        margin-bottom: 5%;
+    }
+    section.bottom-content div.text-container h2 {
+        margin: 3% 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    footer {
+        padding: 3% 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    footer nav a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    header div.top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div.top-bar img {
+        width: 35%;
+        margin: 0 0 7% 0;
+    }
+
+    header div.top-bar nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div.top-bar nav a {
+        margin: 3% 0;
+    }
+
+    header .banner img {
+        height: 20vh;
+        object-fit: cover;
+    }
+
+    section.top-content h2 {
+        font-size: 2.6rem;
+    }
+
+    section.top-content p {
+        font-size: 2rem;
+    }
+
+    section.top-content .text-container {
+        margin: 2%;
+    }
+
+    section.middle-content h2 {
+        font-size: 3rem;
+    }
+
+    section.middle-content div.boxes div.box {
+        font-size: 2.5rem;
+    }
+
+    section.bottom-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.bottom-content div.text-container {
+        width: 95%;
+    }
+
+    section.bottom-content h2 {
+        font-size: 3rem;
+    }
+
+    section.bottom-content p {
+        font-size: 2rem;
+    }
+
+    footer nav {
+        flex-direction: column;
+        padding
+    }
+
+    footer nav a {
+        margin: 2%;
+        font-size: 3rem;
+    }
 }
