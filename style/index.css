@@ -82,6 +82,10 @@ header div.top-bar {
     align-items: flex-end;
 }
 
+header div.top-bar img {
+    width: 20%
+}
+
 header a {
     color: #030811;
     text-decoration: none;
@@ -96,6 +100,10 @@ header nav {
 
 header div.banner {
     margin-top: 5%;
+}
+
+header div.banner img {
+    width: 100%;
 }
 
 .top-content {
